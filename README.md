@@ -135,4 +135,3 @@ Serve para validar alterações antes de integrarem em `develop`.
 
 ---
 
-git checkout -b feature/teste-cd-developop ----- TESTE 2
