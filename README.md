@@ -6,7 +6,6 @@
 - **Carlos Augusto Gorgulho – RM 98456**
 
 ---
-
 ##  Tema da Global Solution
 **Modelos de trabalho baseados em impacto social e sustentabilidade**
 
@@ -136,3 +135,4 @@ Serve para validar alterações antes de integrarem em `develop`.
 
 ---
 
+Linha de teste para execução dos workflows de CI/CD.
