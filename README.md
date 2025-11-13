@@ -7,7 +7,7 @@
 
 ---
 
-## 🎯 Tema da Global Solution
+##  Tema da Global Solution
 **Modelos de trabalho baseados em impacto social e sustentabilidade**
 
 Este tema explora novas formas de organização do trabalho que priorizam impacto social positivo, responsabilidade ambiental, inclusão e sustentabilidade. O objetivo é criar soluções tecnológicas que ajudem empresas e profissionais a atuarem de maneira mais ética, sustentável e alinhada a propósitos sociais relevantes.
