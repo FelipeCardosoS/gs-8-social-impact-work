@@ -18,13 +18,15 @@ public class TemaController {
 
         TemaInfoResponse response = new TemaInfoResponse(
                 "Modelos de trabalho baseados em impacto social e sustentabilidade",
-                "Nome Completo do Membro 1 - RM 99062",
-                "Nome Completo do Membro 2 - RM 98456",
-                "Esta API apresenta informações sobre modelos de trabalho baseados em impacto social e sustentabilidade. " +
-                        "A ideia é conectar organizações e profissionais a iniciativas que gerem valor social mensurável, " +
-                        "promovendo práticas de trabalho responsáveis, transparência no uso de recursos e monitoramento de " +
-                        "indicadores ambientais, sociais e de governança (ESG)."
-        );
+                "Felipe Cardoso Scalesse Ferreira - RM 99062",
+                "Carlos Augusto Gorgulho - RM 98456",
+                "Esta API apresenta informações sobre modelos de trabalho baseados em impacto social e sustentabilidade. "
+                        +
+                        "A ideia é conectar organizações e profissionais a iniciativas que gerem valor social mensurável, "
+                        +
+                        "promovendo práticas de trabalho responsáveis, transparência no uso de recursos e monitoramento de "
+                        +
+                        "indicadores ambientais, sociais e de governança (ESG).");
 
         return ResponseEntity.ok(response);
     }

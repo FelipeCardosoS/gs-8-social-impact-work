@@ -1,0 +1,40 @@
+name: Versioning
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  create_tag:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get latest tag
+        id: vars
+        run: |
+          git fetch --tags
+          last_tag=$(git tag --sort=-v:refname | head -n 1)
+          echo "Última tag: $last_tag"
+          if [ -z "$last_tag" ]; then
+            new_tag="v0.1.0"
+          else
+            version=${last_tag#v}
+            IFS='.' read -r major minor patch <<< "$version"
+            patch=$((patch + 1))
+            new_tag="v${major}.${minor}.${patch}"
+          fi
+          echo "new_tag=$new_tag" >> $GITHUB_OUTPUT
+
+      - name: Create and push tag
+        run: |
+          git tag ${{ steps.vars.outputs.new_tag }}
+          git push origin ${{ steps.vars.outputs.new_tag }}
