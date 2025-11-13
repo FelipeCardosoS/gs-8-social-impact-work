@@ -135,4 +135,3 @@ Serve para validar alterações antes de integrarem em `develop`.
 
 ---
 
-Linha de teste para o workflow de CD apontando para develop.
