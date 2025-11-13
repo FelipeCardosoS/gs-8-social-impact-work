@@ -81,18 +81,12 @@ https://github.com/felipescalesse/gs-8-social-impact-work
 
 # Workflows – CI/CD (GitHub Actions)
 
-Abaixo está a explicação de cada workflow exigido pela prova.
-
----
-
 ##  1. Versioning (Automação de Versões)
 **Arquivo:** `.github/workflows/versioning.yml`  
 **Acionamento:** push na branch `main`  
 **Função:**
 - Gera tags automáticas no formato `v0.1.0`, `v0.1.1`, `v0.1.2`…
 - Mantém histórico de versões da API
-
-**Status:**  Concluído e testado (workflow rodou e gerou tag)
 
 ---
 
